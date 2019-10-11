@@ -1,0 +1,13 @@
+{
+  "realm": "my-realm-apis",
+  "auth-server-url": "${env.SSO_AUTH_URL}",
+  "ssl-required": "none",
+  "resource": "mystudents-api",
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "fa5a6471-1be6-496e-8449-c084719056e9"
+  },
+  "use-resource-role-mappings": true,
+  "confidential-port": 0,
+  "disable-trust-manager": true
+}
