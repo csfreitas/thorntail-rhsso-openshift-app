@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: app-config
+  name: students-api-config
 data:
   project-defaults.yml: |-
     thorntail:
