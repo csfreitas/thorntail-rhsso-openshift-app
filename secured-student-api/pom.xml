@@ -71,7 +71,7 @@
 		<profile>
 			<id>openshift</id>
 			<build>
-				<finalName>student-api</finalName>
+				<finalName>students-api</finalName>
 				<plugins>
 					<plugin>
 						<groupId>io.fabric8</groupId>
