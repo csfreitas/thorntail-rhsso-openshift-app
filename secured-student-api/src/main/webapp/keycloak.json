@@ -1,0 +1,10 @@
+{
+  "realm": "my-realm-apis",
+  "auth-server-url": "https://sso-demo-thorntail-rhsso-microservices.apps.us-west-2.starter.openshift-online.com/auth",
+  "ssl-required": "none",
+  "resource": "student-api",
+  "verify-token-audience": true,
+  "use-resource-role-mappings": true,
+  "confidential-port": 0,
+  "disable-trust-manager": true
+}

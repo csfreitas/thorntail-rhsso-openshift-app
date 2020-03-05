@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.redhat.training.microprofile.myschool</groupId>
-	<artifactId>student-api</artifactId>
+	<artifactId>secured-students-api</artifactId>
 	<name>Thorntail Example - API System management students</name>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<properties>
-		<version.thorntail>2.4.0.Final-redhat-00013</version.thorntail>
+		<version.thorntail>2.5.0.Final-redhat-00016</version.thorntail>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
@@ -42,16 +42,14 @@
 			<groupId>io.thorntail</groupId>
 			<artifactId>jaxrs-jaxb</artifactId>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.thorntail/netflix-guava -->
 		<dependency>
 			<groupId>io.thorntail</groupId>
-			<artifactId>netflix-guava</artifactId>
-			<version>${version.thorntail}</version>
+			<artifactId>cdi</artifactId>
 		</dependency>
 	</dependencies>
 
 	<build>
-		<finalName>student-api</finalName>
+		<finalName>students-api</finalName>
 		<plugins>
 			<plugin>
 				<groupId>io.thorntail</groupId>
