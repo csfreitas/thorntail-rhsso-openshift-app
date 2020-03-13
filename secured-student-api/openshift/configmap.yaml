@@ -20,7 +20,7 @@ data:
       keycloak:
         secure-deployments:
           students-api.war:
-            auth-server-url: "https://sso-test-api.apps.shared.na.openshift.opentlc.com/auth"
+            auth-server-url: "https://localhost:8180/auth"
             realm: MyRealm
             resource: students-api
             public-client: false

@@ -1,28 +1,3 @@
 thorntail:
-  deployment:
-    students-api.war:
-      web:
-        login-config:
-          auth-method: KEYCLOAK
-        security-constraints:
-          - url-pattern: /*
-            methods: [GET]
-            roles: [common-user]
-          - url-pattern: /*
-            methods: [POST,DELETE]
-            roles: [admin-user]
-  keycloak:
-    secure-deployments:
-      students-api.war:
-        auth-server-url: "http://localhost:8180/auth"
-        realm: MyRealm
-        resource: students-api
-        public-client: false
-        ssl-required: EXTERNAL
-        principal-attribute: preferred_username
-        use-resource-role-mappings: true
-        verify-token-audience: true
-        bearer-only: true
-        confidential-port: 0
-        
-
+  http:
+    port: 8082

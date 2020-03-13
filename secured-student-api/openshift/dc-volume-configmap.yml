@@ -1,13 +1,6 @@
 spec:
   template:
     spec:
-      containers:
-      - volumeMounts:
-        - name: secured-students-api-config
-          mountPath: /app/config
-        env:
-        - name: JAVA_OPTIONS
-          value: "-Dthorntail.project.stage.file=file:///app/config/project-defaults.yml"
       volumes:
         - name: secured-students-api-config
           configMap:
@@ -15,3 +8,11 @@ spec:
             items:
             - key: "project-defaults.yml"
               path: "project-defaults.yml"
+      containers:
+        - name: secured-student-api
+          env:
+            - name: JAVA_OPTIONS
+              value: "-Dthorntail.project.stage.file=file:///app/config/project-defaults.yml"
+          volumeMounts:
+            - name: secured-students-api-config
+              mountPath: /app/config

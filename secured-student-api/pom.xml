@@ -47,11 +47,11 @@
 			<artifactId>cdi</artifactId>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.keycloak/keycloak-adapter-core -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.keycloak</groupId>
 			<artifactId>keycloak-adapter-core</artifactId>
 			<version>4.8.17.Final-redhat-00001</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 
 	<build>

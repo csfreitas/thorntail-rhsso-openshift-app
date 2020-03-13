@@ -34,10 +34,10 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>io.thorntail</groupId>
 			<artifactId>keycloak</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>io.thorntail</groupId>
 			<artifactId>jaxrs-jaxb</artifactId>
